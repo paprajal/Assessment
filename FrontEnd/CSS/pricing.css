@@ -1,0 +1,54 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 40px;
+  height: 80px;
+  width: 100%;
+  padding: 10px;
+  margin: auto 0;
+  background-color: powderblue;
+}
+
+h4 {
+  text-decoration: underline;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+  grid-gap: 50px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  text-align: center;
+}
+
+.new {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 40px;
+  height: 100px;
+  width: 100%;
+  padding: 5px;
+  margin: auto 0;
+  background-color: powderblue;
+}
+
+.email, .im {
+  float: left;
+}
+
+.emial {
+  margin-top: 10px;
+}
+/*# sourceMappingURL=pricing.css.map */

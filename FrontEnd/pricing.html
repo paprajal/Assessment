@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/pricing.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+      
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css
+">
+  <script src="myjs/jquery.js"></script>
+  <script src="myjs/pricing.js"></script>
+<title>Pricing Page</title>
+<style>
+ 
+ 
+  
+  .llist,.licon{
+     overflow:hidden;
+     float:left;
+                  }
+  .icon{
+      display:inline
+                  }
+  .list{
+    display:inline;
+    color:green;
+    font-size: 20px;
+                  }
+
+.music{
+  list-style-image: url("images/music-note-list.svg");
+}
+  body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: white;
+}
+
+.button {
+  position: relative;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: #f72359;
+  padding: 1em 2em;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.button span {
+  position: relative;
+  pointer-events: none;
+}
+.button::before {
+  --size: 0;
+  content: '';
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(circle closest-side, #4405f7, transparent);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  transition: width .2s ease, height .2s ease;
+}
+.button:hover::before {
+  --size: 400px;
+}
+</style>
+</head>
+
+
+<body>
+  <div class="container">
+    <div class="menu" style="background-color:darkblue; color:white"><img src="images/menu.png" width="50px" height="50px">&nbsp;&nbsp;Explcon</div>
+
+    <div>
+      <h2 style="color:darkblue">PRICING</h2>
+      <p style="color:darkblue">Test out our app today! Choose from three subscription Based payment models.</p>
+    </div>
+  
+    <div class="grid-container">
+      <div class="grid-item">
+        <h4 style="color:darkblue">BASIC</h4>
+        <p style="color:darkblue">MONTHLY</p>
+        <h1 style="color:darkblue">$9</h1>
+        <ul class="music">
+          <li style="color:darkblue">Very good</li>
+          <li style="color:darkblue">Amazing</li>
+          <li style="color:darkblue">Perfect job</li>
+          <li style="color:darkblue">Love this</li>
+          <li style="color:darkblue">It's so good</li>
+          <li style="color:darkblue">Features</li>
+        </ul>
+        <br>
+        <a class="button" href="payment.html">
+          <span>Select</span>
+        </a>
+      </div>
+      <div class="grid-item">
+        <h4 style="color:darkblue">ADVANCED</h4>
+        <p style="color:darkblue">YEARLY</p>
+        <h1 style="color:darkblue">$99</h1>
+        <ul class="music">
+          <li style="color:darkblue">Very very good</li>
+          <li style="color:darkblue">Even Amazing</li>
+          <li style="color:darkblue">Perfect job</li>
+          <li style="color:darkblue">Love this more</li>
+          <li style="color:darkblue">It's so so good</li>
+          <li style="color:darkblue">More Features</li>
+        </ul>
+        <br>
+        <a class="button" href="payment.html">
+          <span>Select</span>
+        </a>
+      </div>
+      <div class="grid-item">
+        <h4 style="color:darkblue">PRO</h4>
+        <p style="color:darkblue">YEARLY</p>
+        <h1 style="color:darkblue">$120</h1>
+        <ul class="music">
+          <li style="color:darkblue">Very very good</li>
+          <li style="color:darkblue">Even more</li>
+          <li style="color:darkblue">Perfect job</li>
+          <li style="color:darkblue">Love this more</li>
+          <li style="color:darkblue">It's so so good</li>
+          <li style="color:darkblue" >More Features</li>
+        </ul>
+        <br>
+        <a class="button" href="payment.html">
+          <span>Select</span>
+        </a>
+      </div>
+    </div>
+      
+    </div>
+    <div class="new" style="background-color:darkblue; color:white">
+      <img class="email" src="images/envelope.svg" style="background-color: white;"> <h5 class="im">Support@experienceconcerts.co</h5>
+      <div class="col-50">
+        <ul class="llist">
+          <li class="list">2019&copy;All Rights Reserved &nbsp; | </li>&nbsp;
+          <li class="list">Speer Technologies Incorporated</li>&nbsp;
+          
+        </ul>
+      </div>
+        <div class="col-50 desktop">
+          <ul class="licon">
+            <li class="icon"><a href="https://www.facebook.com" class="fa fa-facebook-square" style="font-size:36px; background:darkblue; color:white"></a></li>
+            <li class="icon"><a href="https://www.instagram.com" class="fa fa-instagram" style="font-size:36px; background:darkblue; color:white"></a></li>
+            <li class="icon"><a href="https://www.linkedin.com" class="fa fa-linkedin-square" style="font-size:36px; background:darkblue; color:white"></a></li>
+            <li class="icon"><a href="https://www.twitter.com" class="fa fa-twitter-square" style="font-size:36px; background:darkblue; color:white"></a></li>
+          </ul>
+        </div>
+   </div>
+   
+
+
+
+    
+
+          
+      
+ 
+
+
+    
+  
+
+
+<script>
+  document.querySelector('.button').onmousemove = function (e) {
+
+var x = e.pageX - e.target.offsetLeft;
+var y = e.pageY - e.target.offsetTop;
+
+e.target.style.setProperty('--x', x + 'px');
+e.target.style.setProperty('--y', y + 'px');
+};
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+  
+  
+
+
+</body>
+</html>

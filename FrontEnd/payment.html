@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="myjs/jquery.js"></script>
+  <script src="myjs/payment.js"></script>
+  <title>Payment Page</title>
+  <link rel="stylesheet" href="CSS/payment.css">
+</head>
+<body>
+  <div class="container">
+    <div class="menu" style="background-color: darkblue;color: white;"><img src="images/menu.png" width="50px" height="50px">&nbsp;&nbsp;Explcon</div>
+
+    
+    
+
+     <div class="grid-container">
+      <div class="grid-item1">
+        <h2 style="color:darkblue">PAYMENT</h2>
+        <h2 style="color:darkblue">1. Select your plan</h2>
+        
+          <label for="bas" style="color:darkblue">BASIC</label><input type="radio" name="basic"><label for="adv" style="color:darkblue">ADVANCED</label><input type="radio" name="advanced"><label for="adv" style="color:darkblue">PRO</label> <input type="radio" name="pro">
+        
+      </div>
+      <div class="grid-item">
+        <h2 style="color:darkblue">2. Billing Information</h2>
+        <form>
+          <label for="fname" style="color:darkblue">FULL NAME</label>
+          <input type="text" id="fname" name="fname" size="50" required>
+          <label for="addr" style="color:darkblue">BILLING ADDRESS</label>
+          <input type="text" id="addr" name="addr" required>
+          <div style="float:left; margin:5px">
+          <label for="city" style="color:darkblue" >CITY</label>
+          <input type="text" id="city" name="city" size="25"  required>
+          </div>
+          <div style="float:left; margin:5px" >
+          <label for="code" style="color:darkblue">POSTAL CODE</label>
+          <input type="text" id="code" name="code" size="25"  required>
+          </div>
+          <div style="clear:both;"></div>
+          <label for="coun" style="color:darkblue">COUNTRY</label>
+          <select id="coun"  name="country"  required>
+            <option value="CANADA">CANADA</option>
+            <option value="USA">USA</option>
+            <option value="INDIA">INDIA</option>
+            <option value="UAE">UAE</option>
+          </select>
+
+
+        </form>
+      </div>
+      <div class="grid-item">
+        <h2 style="color:darkblue">3. Credit Card Information</h2>
+        <form>
+          <label for="cname" style="color:darkblue">CARDHOLDER'S NAME</label>
+          <input type="text" id="cname" name="cname" required>
+          <label for="cnum" style="color:darkblue">CARD NUMBER</label>
+          <input type="text" id="cnum" name="cnum" required>
+          <div style="float:left; margin:5px">
+          <label for="month" style="color:darkblue">EXPIRY MONTH</label>
+          <input type="text" id="month" name="month" size="25" required>
+        </div>
+          <div style="float:left; margin:5px">
+          <label for="year" style="color:darkblue">EXPIRY YEAR</label>
+          <input class="date-own form-control" type="text" id="year" name="year" size="25" required>
+        </div>
+          <div style="clear:both;">&nbsp;</div>
+          <label for="cvv" style="color:darkblue">CVV</label>
+          <input type="password" id="cvv" name="cvv" required>
+        </form>
+      </div>
+    </div>
+    <div> 
+    <button href="#" class="btn-mix-noborder" id="down" data-text="Download" >Download</button>
+  </div>
+  </div>
+    <div class="new" style="background:darkblue; color:white">
+      <img style="background-color: white;" class="email" src="images/envelope.svg"> <h5 class="im">Support@experienceconcerts.co</h5>
+      <div class="col-50">
+        <ul class="llist">
+          <li class="list">2019&copy;All Rights Reserved &nbsp; | </li>&nbsp;
+          <li class="list">Speer Technologies Incorporated</li>&nbsp;
+          
+        </ul>
+        </div>
+        <div class="col-50 desktop">
+          <ul class="licon">
+            <li class="icon"><a href="https://www.facebook.com" class="fa fa-facebook-square" style="font-size:36px; background:darkblue; color:white"></a></li>
+            <li class="icon"><a href="https://www.instagram.com" class="fa fa-instagram" style="font-size:36px; background:darkblue; color:white"></a></li>
+            <li class="icon"><a href="https://www.linkedin.com" class="fa fa-linkedin-square" style="font-size:36px; background:darkblue; color:white"></a></li>
+            <li class="icon"><a href="https://www.twitter.com" class="fa fa-twitter-square" style="font-size:36px; background:darkblue; color:white"></a></li>
+          </ul>
+        </div>
+        <!-- <hr>
+          <div style="background-color: red;" >
+
+          </div> -->
+   </div>
+   
+  
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+   <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+     
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+  
+  
+</body>
+</html>
